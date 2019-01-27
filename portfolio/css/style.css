@@ -1,0 +1,366 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+}
+.description {
+  margin-left: 9px;
+}
+.description_small {
+  color: #6a696b;
+}
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  width: 57px;
+  height: 57px;
+  background: url("https://pp.userapi.com/c10059/u2878673/117052015/z_237e2afc.jpg");
+  background-size: 200%;
+  background-position: 40% 15%;
+  /*background-color: #2b2a2c;*/
+  border-radius: 50%;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.menu-list a {
+  text-decoration: none;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-right: 34px;
+  position: relative;
+}
+nav a::before,
+nav a::after {
+  position: absolute;
+  content: "";
+  background-color: black;
+  height: 2px;
+  bottom: 1px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+nav a::before {
+  right: 50%;
+}
+nav a::after {
+  left: 50%;
+}
+nav a:hover::after,
+nav a:hover::before {
+  width: 50%;
+}
+.menu-button {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 2px solid #2b2a2c;
+  padding: 13px 22px;
+}
+.hero {
+  padding-top: 112px;
+  padding-bottom: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /*background: url('https://wmpics.pics/di-CFIR.png') no-repeat right bottom;*/
+}
+.hero-subtitle {
+  font-size: 32px;
+}
+
+.hero-title {
+  font-size: 45px;
+  font-weight: 800;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hero-photo {
+  max-width: 400px;
+  margin-right: 70px;
+}
+.hero-description {
+  font-size: 18px;
+  color: #6a696b;
+}
+.hero-social {
+  margin-top: 30px;
+}
+.social {
+  display: inline-block;
+  height: 41px;
+  width: 41px;
+  margin-right: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 41px;
+}
+.behance-bg {
+  background-color: #1869ff;
+}
+.facebook-bg {
+  background-color: #3a5898;
+}
+.instagram-bg {
+  background-color: #13578a;
+}
+.vk-bg {
+  background-color: #56acef;
+}
+.hero-buttons {
+  margin-top: 40px;
+}
+.button {
+  font-size: 16px;
+  font-weight: 800;
+  text-decoration: none;
+  background-color: #2b2a2c;
+  border-radius: 50px;
+  padding: 20px 34px;
+  display: inline-block;
+}
+.button-primary {
+  color: #fff;
+  margin-right: 17px;
+  margin-bottom: 10px;
+}
+.button-o {
+  background-color: transparent;
+  color: #6a696b;
+  border: 1px solid #6a696b;
+}
+.projects {
+  padding: 97px 0 80px 0;
+}
+.project-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.project-card {
+  min-height: 370px;
+  width: 370px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}
+.project-card__image {
+  height: 300px;
+}
+.landing-page {
+  background: url("https://www.brightedge.com/sites/default/files/landing%20page%20content%20optimization.jpg")
+    center;
+}
+.corporate-page {
+  background: url("https://www.artex-web.ru/upload/iblock/b9c/b9c27ad58eee614fc8786e05631a3cd0.png")
+    center;
+}
+.modern-page {
+  background: url("http://www.caitvizitka.ru/upload/iblock/c3f/1.jpg") center;
+}
+.website-page {
+  background: url("https://home-business.ru/wp-content/uploads/2006/11/site.jpg")
+    center;
+}
+.new-page {
+  background: url("http://www.fainaidea.com/wp-content/uploads/2018/08/novyi-sai-t.jpg")
+    center;
+}
+.phone-page {
+  background: url("https://cdn.sproot.it:444/uploads/posts/network3.jpg") center;
+}
+.man-page {
+  background: url("http://www.seoded.ru/image/kak-sozdat-svoj-sajt-3-besplatno.jpg")
+    center;
+}
+.adaptive-page {
+  background: url("http://900igr.net/up/datas/188585/010.jpg") center;
+}
+.tablet-page {
+  background: url("http://studio.brandpro.ru/wp-content/uploads/sajt-vizitka-spb2.png")
+    center;
+}
+.landing-page,
+.corporate-page,
+.modern-page,
+.website-page,
+.new-page,
+.phone-page,
+.man-page,
+.adaptive-page,
+.tablet-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-card__info {
+  padding: 19px 13px;
+}
+.project-category {
+  display: block;
+  font-size: 12px;
+  color: #2b2a2c;
+}
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+.about {
+  margin-bottom: 105px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-photo {
+  
+  max-height: 606px;
+  width: auto;
+  margin-right: 60px;
+}
+.about-info {
+  padding-top: 60px;
+  max-width: 530px;
+  padding-right: 99px;
+}
+.about-title {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 42px;
+  color: #2b2a2c;
+  font-size: 45px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.about-text {
+  color: #717072;
+  font-size: 12px;
+  line-height: 24px;
+}
+.footer {
+  background-color: #2b2a2c;
+  padding: 20px 0;
+  color: #8d8d8e;
+}
+.footer a {
+  color: #8d8d8e;
+  text-decoration: none;
+}
+.footer-info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+}
+.copyright {
+  padding-right: 16px;
+  margin-right: 16px;
+  border-right: 1px solid #8d8d8e;
+  font-size: 14px;
+}
+.footer-social__link {
+  font-size: 20px;
+  margin-right: 13px;
+}
+.footer-menu {
+  display: flex;
+  align-items: center;
+  justify-cotent: space-between;
+}
+.footer-menu a {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.footer-button {
+  font-size: 14px;
+  background-color: transparent;
+  border-radius: 50px;
+  border: 1px solid #8d8d8e;
+  padding: 8px 22px;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 965px;
+  }
+  .project-card {
+    width: 48%;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  .project-card {
+    width: 48%;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-text {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 860px) {
+  .menu-list {
+    display: none;
+  }
+    .about {     
+    flex-direction: column;
+      align-items: center;
+  }
+  .about-photo {
+    width: 60%;
+  }
+}
+@media (max-width: 768px) {
+  .description-small {
+    font-size: 10px;
+  }
+  .menu-list {
+    display: none;
+  }
+  .hero {
+   flex-direction: column; 
+    padding-top: 30px;
+  }
+  .hero-photo {
+    margin: 30px 0 -200px;
+  }
+  .container {
+    width: 95%;
+  }
+  .project-card {
+    width: 95%;
+    margin: 30px auto;
+  }
+}

@@ -7,19 +7,51 @@ window.addEventListener('DOMContentLoaded', function () {
         close = document.querySelectorAll('.form-close');
 
     writeMe.forEach(function (item) {
-        item.addEventListener('click', function (event) {            
+        item.addEventListener('click', function (event) {
             event.preventDefault();
             popup.classList.add('overlay');
             document.body.style.overflow = 'hidden';
         });
     });
 
-    close.forEach(function(item){
-       item.addEventListener('click', function() {
-        this.parentNode.parentNode.classList.remove('overlay');
-        document.body.style.overflow = '';
-       });
+    close.forEach(function (item) {
+        item.addEventListener('click', function () {
+            this.parentNode.parentNode.classList.remove('overlay');
+            document.body.style.overflow = '';
+        });
     });
+
+    var $page = $('html, body');
+    $('a[href*="#"]').click(function () {
+            if (this.hash == '#top') {
+                $page.animate({scrollTop: 0}, 400);
+            }
+            else {
+            $page.animate({
+                scrollTop: $($.attr(this, 'href')).offset().top
+            }, 400);
+        }
+        return false;
+    });
+
+$(function () {
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() != 0) {
+
+            $('#toTop').fadeIn();
+
+        } else {
+
+            $('#toTop').fadeOut();
+
+        }
+
+    });
+
+
+});
 
 });
 // // Код учителя:

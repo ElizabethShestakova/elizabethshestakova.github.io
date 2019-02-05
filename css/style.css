@@ -3,6 +3,14 @@ body {
   margin: 0;
 }
 
+header {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  padding-bottom: 5px;
+  z-index: 1000;
+}
+
 img {
   max-width: 100%;
 }
@@ -43,9 +51,10 @@ img {
 .avatar {
   width: 57px;
   height: 57px;
-  background: url("https://pp.userapi.com/c10059/u2878673/117052015/z_237e2afc.jpg");
+  /* background: url("https://pp.userapi.com/c10059/u2878673/117052015/z_237e2afc.jpg"); */
+  background: url("https://cdn1.savepice.ru/uploads/2019/2/5/7db4773b5657f934feed4203dad29054-full.jpg");
   background-size: 200%;
-  background-position: 40% 15%;
+  background-position: 50% 10%;
   /*background-color: #2b2a2c;*/
   border-radius: 50%;
 }
@@ -63,28 +72,45 @@ img {
   margin-right: 34px;
   position: relative;
 }
+.link {
+  position: relative;
+}
 
 nav a::before,
-nav a::after {
+nav a::after,
+.link::before,
+.link::after {
   position: absolute;
   content: "";
   background-color: black;
-  height: 2px;
+  
   bottom: 1px;
   width: 0%;
   transition: width 0.3s ease-in-out;
 }
+nav a::before,
+nav a::after{
+  height: 2px;
+}
+.link::before,
+.link::after {
+  height: 1px;
+}
 
-nav a::before {
+nav a::before,
+.link::before {
   right: 50%;
 }
 
-nav a::after {
+nav a::after,
+.link::after {
   left: 50%;
 }
 
 nav a:hover::after,
-nav a:hover::before {
+nav a:hover::before,
+.link:hover::before,
+.link:hover::after {
   width: 50%;
 }
 
@@ -304,15 +330,27 @@ nav a:hover::before {
   justify-content: space-between;
 }
 
-.about-photo {
+.about-photo
+ {
 
   max-height: 606px;
   width: auto;
   margin-right: 60px;
 }
 
+.edu-photo {
+  display: flex;
+  align-self: center;
+  max-height: 300px;
+}
+.link {
+  text-decoration: none;
+  color: #000;
+  transition: all 1s ease-in-out;
+}
+
 .about-info {
-  padding-top: 60px;
+  /* padding-top: 60px; */
   max-width: 530px;
   padding-right: 99px;
 }
@@ -320,7 +358,7 @@ nav a:hover::before {
 .about-title {
   padding: 0;
   margin: 0;
-  margin-bottom: 42px;
+  /* margin-bottom: 42px; */
   color: #2b2a2c;
   font-size: 45px;
   font-weight: 800;
@@ -379,7 +417,7 @@ nav a:hover::before {
 .footer-menu {
   display: flex;
   align-items: center;
-  justify-cotent: space-between;
+  justify-content: space-between;
 }
 
 .footer-menu a {
@@ -458,7 +496,7 @@ nav a:hover::before {
   }
 
   .hero-photo {
-    margin: 30px 0 -200px;
+    margin: 30px 0 -100px;
   }
 
   .container {
@@ -480,7 +518,7 @@ nav a:hover::before {
   width: 100%;
   height: 100%;
   max-height: 600px;
-  
+
   /* background: rgba(0, 0, 0, 0.5); */
 }
 
@@ -597,3 +635,7 @@ nav a:hover::before {
     box-shadow: 0 0 60px #c78030;
   }
 }
+#toTop {
+  display:none;
+
+  }

@@ -22,3 +22,18 @@ window.addEventListener('DOMContentLoaded', function () {
     });
 
 });
+// // Код учителя:
+// $(document).ready(function() {
+
+//     $('.write-me').click(function(event) {
+//         event.preventDefault();
+//         $('.popup').fadeIn(1000);
+//         // $('.modal').slideDown(1000);
+//     });
+
+//     $('.form-close').click(function() {
+//         // $('.modal').slideUp(1000);
+//         $('.popup').fadeOut(1000);
+//     });
+
+// });

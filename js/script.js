@@ -28,7 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
             }
             else {
             $page.animate({
-                scrollTop: $($.attr(this, 'href')).offset().top
+                scrollTop: $($.attr(this, 'href')).offset().top - 70
             }, 400);
         }
         return false;

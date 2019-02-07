@@ -289,7 +289,7 @@ nav a:hover::before,
 
 .about-photo
  {
-
+max-width: 400px;
   max-height: 606px;
   width: auto;
   margin-right: 60px;
@@ -410,10 +410,9 @@ nav a:hover::before,
     width: 95%;
   }
 
-  /* .project-card {
-    width: 48%;
-
-  } */
+  header .write-me {
+    display: none;
+  }
 
   .footer-info {
     flex-direction: column;
@@ -451,9 +450,13 @@ nav a:hover::before,
     flex-direction: column;
     align-items: center;
   }
-
-  .about-photo {
-    width: 60%;
+.hero-info {
+  margin-top: 50px;
+}
+  .about-photo,
+  .hero-photo {
+    width: 80%;
+    height: auto;
   }
     .columns {
     flex-wrap: wrap;

@@ -401,9 +401,9 @@ nav a:hover::before,
     width: 965px;
   }
 
-  .project-card {
+  /* .project-card {
     width: 48%;
-  }
+  } */
 }
 
 @media (max-width: 992px) {
@@ -411,10 +411,10 @@ nav a:hover::before,
     width: 95%;
   }
 
-  .project-card {
+  /* .project-card {
     width: 48%;
 
-  }
+  } */
 
   .footer-info {
     flex-direction: column;
@@ -467,10 +467,10 @@ nav a:hover::before,
     width: 95%;
   }
 
-  .project-card {
+  /* .project-card {
     width: 95%;
     margin: 30px auto;
-  }
+  } */
   .columns {
     flex-wrap: wrap;
   }

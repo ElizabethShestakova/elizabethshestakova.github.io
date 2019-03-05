@@ -51,10 +51,10 @@ img {
 .avatar {
   width: 57px;
   height: 57px;
-  /* background: url("https://pp.userapi.com/c10059/u2878673/117052015/z_237e2afc.jpg"); */
-  background: url("https://cdn1.savepice.ru/uploads/2019/2/5/7db4773b5657f934feed4203dad29054-full.jpg");
+  background: url("https://pp.userapi.com/c10059/u2878673/117052015/z_237e2afc.jpg");
+  /* background: url("https://cdn1.savepice.ru/uploads/2019/2/5/7db4773b5657f934feed4203dad29054-full.jpg"); */
   background-size: 200%;
-  background-position: 50% 10%;
+  background-position: 40% 10%;
   /*background-color: #2b2a2c;*/
   border-radius: 50%;
 }
